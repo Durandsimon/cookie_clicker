@@ -1,0 +1,439 @@
+@charset "UTF-8";
+
+html {
+    font-family: "Righteous", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:skyblue;
+    overflow: hidden;
+}
+
+/* animation */
+
+@keyframes rotation {
+    from {
+        transform: rotate(-30deg);
+    }
+    to {        
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes rotation2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {        
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes flashing_rouge {
+    from {
+        filter: drop-shadow(0 0 5px crimson);
+        opacity: 1;
+    }
+    to {        
+        filter: drop-shadow(0 0 1px crimson);
+        opacity: 0.5;
+    }
+}
+
+@keyframes flashing_jaune {
+    from {
+        filter: drop-shadow(0 0 5px #f0cc02);
+        opacity: 1;
+    }
+    to {        
+        filter: drop-shadow(0 0 1px #f0cc02);
+        opacity: 0.5;
+    }
+}
+
+@keyframes translateX {
+    from {
+        transform: translateX(0vw);
+    }
+    to {
+        transform: translateX(10vw);
+    }
+}
+
+
+@keyframes pluie {
+    from {
+    transform: translateY(-100vh)
+    }
+    
+    to {
+    transform: translateY(80vh)
+    }
+}
+
+/* classe fonctionnel  */
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.container2{
+    width: 100%;
+    margin: 0 auto;
+}
+  
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.justify-content-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.align-item{
+    display: flex;
+    align-items: center;
+}
+  
+.align-text {
+    text-align: center;
+}
+
+/* video  */
+
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+#background-video-etoile {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+    display: none;
+}
+
+/* titre  */
+
+h1{
+    font-family:  'Righteous';
+}
+
+h2{
+    text-transform: uppercase;
+    font-family: 'Righteous';
+}
+
+a{
+    font-family: 'Righteous';
+}
+
+/* hero  */
+#hero{
+    background-color:transparent;
+    height: 74vh;
+    width:100%;
+    position: absolute;
+}
+
+.score{
+    z-index: 2;
+}
+
+/* menu  */
+#menu{
+    position: relative;
+    background-color:transparent;
+    width: 25%;
+    height: 74vh;
+    display: flex;
+}
+
+/* deuxième bloc  */
+
+#bloc-herbe{
+    justify-content: space-evenly;
+}
+
+/* décoration  */
+#arbre{
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    width: 32.1%;
+    bottom: 0vh;
+    left: 35vw;
+    display: block;
+}
+
+#asteroide{
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    width: 30%;
+    bottom: 4vh;
+    left: 35vw;
+    animation: linear rotation2 12s infinite;
+    display: none;
+}
+
+#herbe{
+    position: relative;
+    background-color: greenyellow;
+    width: 100%;
+    height: 26vh;
+    display: flex;
+    align-items: center;
+}
+
+#ferme{
+    position: absolute;
+    z-index: 2;
+    width: 14%;
+    bottom: -1vh;
+    left: 7vw;
+    display: none;
+}
+
+#moissoneuse{
+    position: absolute;
+    z-index: 1;
+    width: 8%;
+    bottom: -5vh;
+    right: 14vw;
+    animation:  translateX 6s linear infinite alternate;
+    display: none;
+}
+
+#silo{
+    position: absolute;
+    z-index: 1;
+    width: 15%;
+    bottom: -1vh;
+    left: 0vw;
+    display: none;
+}
+
+#tracteur{
+    position: absolute;
+    z-index: 1;
+    width: 8%;
+    bottom: -5vh;
+    left: 25vw;
+    animation:  translateX 5s linear infinite alternate;
+    display: none;
+}
+
+#baton{
+    position: absolute;
+    z-index: 1;
+    width: 3%;
+    bottom: 0vh;
+    left: 48vw;
+    display: none;
+}
+
+#faux{
+    position: absolute;
+    z-index: 1;
+    width: 3%;
+    bottom: 0vh;
+    left: 48vw;
+    display: none;
+}
+
+#hache{
+    position: absolute;
+    z-index: 1;
+    width: 3%;
+    bottom: 0vh;
+    left: 48vw;
+    display: none;
+}
+
+#massue{
+    position: absolute;
+    z-index: 1;
+    width: 3%;
+    bottom: 0vh;
+    left: 48vw;
+    display: none;
+}
+
+#epee{
+    position: absolute;
+    z-index: 1;
+    width: 3%;
+    bottom: 0vh;
+    left: 48vw;
+    display: none;
+}
+
+#kunai{
+    position: absolute;
+    z-index: 1;
+    width: 3%;
+    bottom: 0vh;
+    left: 48vw;
+    display: none;
+}
+
+#katana{
+    position: absolute;
+    z-index: 1;
+    width: 3%;
+    bottom: 0vh;
+    left: 48vw;
+    display: none;
+}
+
+#pomme{
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    width: 2%;
+    bottom: 26vh;
+    left: 48vw;
+    animation:  flashing_rouge 1s linear infinite alternate;
+    display: none;
+}
+
+#etoile{
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    width: 3%;
+    bottom: 26vh;
+    right: 20vw;
+    animation:  flashing_jaune 1s linear infinite alternate;
+    display: none;
+}
+
+#laser2{
+    position: absolute;
+    z-index: 1;
+    width: 3%;
+    bottom: 0vh;
+    left: 48vw;
+    filter: drop-shadow(0 0 10px #f00a02);
+    display: none;
+}
+
+#laser{
+    position: absolute;
+    z-index: 1;
+    width: 3%;
+    bottom: 0vh;
+    left: 48vw;
+    filter: drop-shadow(0 0 10px #02b8f0);
+    display: none;
+}
+
+#fusee{
+    position: absolute;
+    z-index: 1;
+    width: 10%;
+    bottom: 0vh;
+    right: 15vw;
+    display: none;
+}
+
+#module{
+    position: absolute;
+    z-index: 1;
+    width: 6%;
+    bottom: -10vh;
+    left: 15vw;
+    display: none;
+}
+
+#vehicule{
+    position: absolute;
+    z-index: 1;
+    width: 6%;
+    bottom: -10vh;
+    left: 25vw;
+    display: none;
+}
+
+#ovni{
+    position: absolute;
+    z-index: 1;
+    width: 6%;
+    top: 10vh;
+    right: 15vw;
+    animation: rotation 5s linear infinite alternate ;
+    display: none;
+}
+
+.bois{
+    width: 20px;
+    height: 15px;
+}
+
+.meteor{
+    width: 20px;
+    height: 17px;
+}
+
+#meteor_score{
+    display: none;
+}
+
+.pomme {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    animation: pluie 5s linear 0s normal;
+    transform: translateY(-110vh);
+    width: 5vh;
+    overflow-y: hidden;
+}
+
+
+
+/* bouton  */
+
+.cta-X{
+    background-color:white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-X:hover{
+    background-color: grey;
+}
+
+#arme_space{
+    display: none;
+}
+
+#batiment_space{
+    display: none;
+}
+
+#level{
+    display: none;
+}
