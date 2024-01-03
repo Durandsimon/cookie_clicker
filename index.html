@@ -1,97 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<lang="en">
+<link>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie-clicker</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="description" content="description de la page">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Teko:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-<body>
-    <header>
-        
-    </header>
+
+    <title>Portfolio</title>
     
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
+    <!-- FONT  -->
+
+    
+
+
+</head>
+<body>
+    <!-- mettre le contenu ici  -->
+
+    <!-- Header  -->
+    <header>
+        <nav class="container flex-container">
+            <div class="flex-container">
+                <a href="./index.html" ><h3>DURAND</h3></a>
+                <a href="./index.html" ><h3 class="titreorange">SIMON</h3></a>
+            </div>
+            <div>
+                <ul class="flex-container">
+                    <li>
+                        <a href="index.html#qsj">Qui suis-je?</a>
+                    </li>
+                    <li>
+                        <a href="index.html#crea">Mes créations</a>
+                    </li>
+                    <li>
+                        <a href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main  -->
+
     <main>
-        <video id="background-video" autoplay loop muted>
-
-            <source src="./img/nuage.mp4" loop autoplay type="video/mp4">
-
-        </video>
-        <video id="background-video-etoile" autoplay loop muted>
-
-            <source src="./img/etoile.mp4" loop autoplay type="video/mp4">
-
-        </video>
-
-
+        <!-- hero -->
         <section id="hero">
-            <div class="container">
-                <div class="justify-content-center">
-                    <h1 class="align-text score" id="resultat">0</h1>
-                    <img id="bois_score" class="bois score" src="./img/charpente.png">
-                    <img id="meteor_score" class="meteor score" src="./img/asteroide.png">
-                    <h2 id="multiplicateur" class="score">X1</h2>
-                </div>
+            <div class="container relatif">
+                <h1>
+                    Motion Designer
+                </h1>
+                <div class="trait-noir" id="trait1"></div>
+                <div class="trait-noir" id="trait2"></div>
+                <div class="trait-noir" id="trait3"></div>
+                <div class="trait-noir" id="trait4"></div>
+                <div class="trait-noir" id="trait5"></div>
+                <h2>
+                    & web designer
+                </h2>
+                
                 <div class="align-text">
-                    <img id="arbre"  src="./img/arbre.png">
-                    <img id="asteroide"  src="./img/asteroid.png">
-                    <img id="ferme" src="./img/barn.png">
-                    <img id="moissoneuse" src="./img/harvester.png">
-                    <img id="silo" src="./img/silo.png">
-                    <img id="tracteur" src="./img/tractor.png">
-                    <img id="baton" class="arme" src="./img/baton-de-bois.png">
-                    <img id="faux" class="arme" src="./img/faux.png">
-                    <img id="hache" class="arme" src="./img/hache.png">
-                    <img id="massue" class="arme" src="./img/hache_guerre.png">
-                    <img id="epee" class="arme" src="./img/epee.png">
-                    <img id="kunai" class="arme" src="./img/kunai.png">
-                    <img id="katana" class="arme" src="./img/katana.png">
-                    <img id="laser" class="arme" src="./img/epee-laser.png">
-                    <img id="laser2" class="arme" src="./img/epee-laser-rouge.png">
-                    <img id="fusee"  src="./img/fusee.png">
-                    <img id="module"  src="./img/module-lunaire.png">
-                    <img id="vehicule"  src="./img/vehicule-lunaire.png">
-                    <img id="ovni"  src="./img/ovni.png">
-                    <img id="pomme" src="./img/apple.png">
-                    <img id="etoile" src="./img/etoile.png">
+                    <a href="#qsj"><img id="double-fleche" src="img/fleche-vers-le-bas.png" alt="icon-double-fleche"></a>
                 </div>
-            </div>
-        </section>
-        <section id="menu">
-            <div class="container2 align-text">
-                <h2>Boutique</h2>
-                <div id="X2" class="cta-X">
-                    <a>Baton : 20 <img class="bois" src="./img/charpente.png"></a>
-                </div>
-                <div id="auto" class="cta-X">
-                    <a>Ferme : 40 <img class="bois" src="./img/charpente.png"></a>
-                </div>
-                <div id="level" class="cta-X">
-                    <a>??? : 10 000 <img class="bois" src="./img/charpente.png"></a>
-                </div>
-                <h3>News</h3>
-                <div id="news">
-                    <p></p>
-                </div>
-            </div>
-        </section>
-        <section id="herbe">
-            <div id="bloc-herbe" class="container align-item">
                 
             </div>
         </section>
-
+        <section id="qsj" >
+            <div class="container relatif">
+                <div>
+                    <h4 class="text-de-fond">ÉTUDIANT</h4>
+                </div>
+                <h3>À propos</h3>
+                <div class="bordure-orange"></div>
+                
+                <div id="tableau">
+                    <p id="element1">Actuellement en bachelor création numérique au centre de formation My Digital School à Rennes,
+                         je suis passioné de vidéos montages et de création numérique. La réalisation de site web est un atout complémentaire. </p>
+                    <p id="element2">Diplômé d’un BTS SIO(Services informatiques aux organisations) option SLAM qui m’a permis d’apprendre les essentiels 
+                        du développement web et du développement applicatif, j’ai aussi été formé à la cybersécurité, domaine indispensable de nos jours.</p>
+                    <img id="element3" src="./img/P1100006.jpg">
+                    <div class="bordure-orange2"></div>
+                </div>
+            </div>
+        </section>
+        <!-- bloc création  -->
+        <section id="crea">
+            <div class="relatif">  
+                <div class="container">
+                    <h6 class="text-de-fond">Vidéo<br><br>wordpress<br><br>Javascript<br><br>Vidéo<br><br>wordpress<br><br>Javascript</h6>
+                    <h5 class="text-de-fond"><br>motion<br><br>Site web<br><br>html & css<br><br>motion<br><br>Site web<br><br>html & css</h5>
+                    <h3>Créations</h3>
+                    <div class="bordure-orange3"></div>
+                    <div class="flex-container flex-direction bloc-image-crea">
+                        <div>
+                            <a href="./vidéo.html">
+                                <div id="bloc-noir1" class="bloc-noir">
+                                    <p id="titre-bloc-noir">Vidéo</p>      
+                                </div>
+                                <img src="./img/vidéo.jpg" class="img-crea">
+                            </a>
+                            
+                            
+                        </div>
+                        <div>
+                            <a href="./site.html">
+                                <div class="bloc-noir">
+                                    <p id="titre-bloc-noir">Sites Web</p>        
+                                </div>
+                                <img src="./img/photo-site-web.jpg" class="img-crea">
+                            </a>    
+                        <div>
+                            <a href="./logo.html" >
+                                <div class="bloc-noir">
+                                    <p id="titre-bloc-noir">Logo</p>       
+                                </div>
+                                <img src="./img/logo.jpg" class="img-crea">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="./affiche.html" >
+                                <div class="bloc-noir">
+                                    <p id="titre-bloc-noir">Affiche</p>       
+                                </div>
+                                <img src="./img/affiche.jpg" class="img-crea">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="./code.html" >
+                                <div class="bloc-noir">
+                                    <p id="titre-bloc-noir">Code</p>     
+                                </div>
+                                <img src="./img/code.jpg" class="img-crea">
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- bloc contact  -->
+        <section id="contact">
+            <div class="container flex-container">
+                <div class="container">
+                    <div>
+                        <h3>Contact</h3>
+                        <div class="bordure-orange3"></div>
+                    </div>
+                    <div class="container">
+                        <p><a href="mailto:sdurand.contact.pro@gmail.com">sdurand.contact.pro@gmail.com</a></p>
+                        <p><a href="tel:+33782732738">07.82.73.27.38</a></p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div>
+                        <h3>Réseaux</h3>
+                        <div class="bordure-orange4"></div>
+                    </div>
+                    <div class="container">
+                        <p><a href="https://www.linkedin.com/in/simon-durand-534277203/" target="_blank">Linkedin</a></p>
+                    </div>
+                </div>
+            </div>    
+        </section>
     </main>
-
-    
+    <!-- footer  -->
     <footer>
-        
+        <div class="container">
+            
+        </div>
     </footer>
-    <script src="./js/cookie.js"></script>
+    <script src="./js/script.js"></script>
+
 </body>
+
 </html>
